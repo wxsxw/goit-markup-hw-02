@@ -4,7 +4,7 @@
     --color-accent:#2196F3;
 }
   body {
-  font-family: "Roboto", sans-serif;
+   font-family: 'Roboto', sans-serif;
   background-color: #ffffff;
   color: #212121;
 }
@@ -26,6 +26,8 @@
 
 /*------------Header-------  */
 .logo {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
   color: var(--primary-text-color);
   font-weight: 700;
   font-size: 26px;
@@ -33,8 +35,9 @@
   letter-spacing: 0.03em;
   text-decoration: none;
 }
+
 .header-logo{
-  color: var(--color-accent);
+    color: var(--color-accent);
 }
 .site-nav .link {
   color: var(--primary-text-color);
@@ -85,22 +88,41 @@
   
 }
 .hero-btn{
-cursor: pointer;
-background-color: var(--color-accent);
-color: #ffffff;
+  
+  cursor: pointer;
+  background-color: var(--color-accent);
+  color: #ffffff;
+}
+.btn{
+font-family: inherit;
+border:none;
 }
 .button {
   cursor: pointer;
   color: #212121;
   background-color: #F5F4FA;
+  font-family: inherit;
+  
 }
 
 /* ------------Features -------- */
 
 .features {
-  background-color:#E5E5E5 ;
+background-color:#E5E5E5;
 }
-
+ 
+.visually-hidden {  
+  position: absolute;  
+  white-space: nowrap;  
+  width: 1px;  
+  height: 1px;  
+  overflow: hidden; 
+  border: 0;  
+  padding: 0;  
+  clip: rect(0 0 0 0); 
+  clip-path: inset(50%);  
+  margin: -1px;
+} 
 .features-list {}
 
 .features-title {
@@ -193,6 +215,10 @@ text-decoration: none;
   font-style: normal ;
   text-decoration: none;
 }
+.address:hover,
+.address:focus{
+  color: var(--color-accent)
+}
 .link-map{
 font-weight: 400;
 font-size: 14px;
@@ -234,7 +260,8 @@ text-decoration: none;
   line-height: 1,62;
   text-align: center;
   letter-spacing: 0.03em;
-
+  font-family: inherit;
+  border:none;
 }
 .filters-btn:hover, 
 .filters-btn:focus {
@@ -245,10 +272,22 @@ text-decoration: none;
 /* ------ project------- */
 .project {}
 
-.project-title {}
+.project-items {
+  background: #FFFFFF;
+}
 
-.project-items {}
+.title-item {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--primary-text-color);
+}
 
-.title-item {}
-
-.project-text {}
+.project-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1,88;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+}
