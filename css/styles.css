@@ -2,9 +2,10 @@
     --primary-text-color: #212121;
     --text-color: #757575;
     --color-accent:#2196F3;
+    --color-text-white: #FFFFFF
 }
   body {
-   font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
     background-color: #ffffff;
     color: var(--primary-text-color);
 }
@@ -82,13 +83,13 @@
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: var(--color-text-white);
   
 }
 .hero-btn{
   cursor: pointer;
   background-color: var(--color-accent);
-  color: #ffffff;
+  color: var(--color-text-white);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -98,15 +99,15 @@
   letter-spacing: 0.06em;
 }
 .btn{
-font-family: inherit;
-border:none;
+  font-family: inherit;
+  border:none;
 }
-.button {
+/* .button { 
   cursor: pointer;
   color: var(--primary-text-color);
   background-color: #F5F4FA;
   font-family: inherit; 
-}
+} */
 
 /* ------------Features -------- */
 
@@ -208,7 +209,7 @@ background: #F5F4FA;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: #FFFFFF;
+  color: var(--color-text-white);
   text-decoration: none;
 }
 .footer-web{
@@ -227,7 +228,7 @@ background: #F5F4FA;
 font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
-color: #FFFFFF;
+color: var(--color-text-white);
 text-decoration: none;
 }
 .link-email{
@@ -266,18 +267,18 @@ text-decoration: none;
 }
 .filters-btn:hover, 
 .filters-btn:focus {
-  color: #FFFFFF;
+  color: var(--color-text-white);
   background-color: var(--primary-text-color);
 }
 
 /* ----- project ------- */
 .project {}
 
-.project-items {
+.project-list {
   background: #FFFFFF;
 }
 
-.title-item {
+.project-title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
